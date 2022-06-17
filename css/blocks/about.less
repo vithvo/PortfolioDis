@@ -1,0 +1,56 @@
+//main: ../style.less
+
+.about {
+  margin: 8.4rem 0;
+}
+
+.about__inner {
+  display: flex;
+  max-width: 1090px;
+}
+.about__photo {
+  position: relative;
+
+  img {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:before {
+    content: "";
+    width: 414px;
+    height: 414px;
+    background-color: #efefef;
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+.about__content {
+  margin-top: 2rem;
+  width: 50%;
+  padding-left: 3.2rem;
+}
+.about__title {
+  font-size: 3rem;
+  color: @black;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about__bigtitle {
+  position: relative;
+  left: -10px;
+  margin-bottom: 1.4rem;
+  font-size: 6.1rem;
+  color: fade(@black, 15%);
+  font-weight: 700;
+  line-height: 1.1;
+}
+.about__text {
+  margin-bottom: 2.8rem;
+  font-size: 0.8rem;
+  color: @grey;
+  line-height: 2;
+  font-weight: 300;
+}

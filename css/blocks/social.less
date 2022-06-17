@@ -1,0 +1,23 @@
+//main: ../style.less
+
+.social {
+  display: flex;
+  margin-bottom: 42px;
+}
+.social__link {
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+  }
+  &:last-child {
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
