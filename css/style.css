@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-style: 14px;
+  color: #6c7279;
+  background-color: #fff;
+  -webkit-font-smoothing: antialised;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #2b2a2c;
+}
+html {
+  font-size: 15px;
+}
+* {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0 0 10px;
+}
+.intro {
+  width: 200px;
+  height: 200px;
+  color: #2b2a2c;
+}
