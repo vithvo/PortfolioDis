@@ -12,6 +12,12 @@
       rel="stylesheet"
     />
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -97,14 +103,16 @@
     <div class="works">
       <div class="container">
         <div class="works__nav">
-          <a class="works__nav-link" href="#">All</a>
-          <a class="works__nav-link" href="#">App</a>
-          <a class="works__nav-link" href="#">Website</a>
-          <a class="works__nav-link" href="#">Interation</a>
+          <a class="works__nav-link" href="#" data-filter="all">All</a>
+          <a class="works__nav-link" href="#" data-filter="app">App</a>
+          <a class="works__nav-link" href="#" data-filter="website">Website</a>
+          <a class="works__nav-link" href="#" data-filter="interation"
+            >Interation</a
+          >
         </div>
 
         <div class="portfolio">
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="app">
             <div class="work">
               <img
                 class="work__image"
@@ -112,7 +120,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">App</div>
                 <div class="work__title">
                   Project title
                   <time class="work__date" datetime="2022-17-06 13:00"
@@ -122,7 +130,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="website">
             <div class="work">
               <img
                 class="work__image"
@@ -130,7 +138,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Website</div>
                 <div class="work__title">
                   Project title
                   <time class="work__date" datetime="2022-17-06 13:00"
@@ -140,7 +148,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="interation">
             <div class="work">
               <img
                 class="work__image"
@@ -148,7 +156,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Interation</div>
                 <div class="work__title">
                   Project title
                   <time class="work__date" datetime="2022-17-06 13:00"
@@ -158,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="app">
             <div class="work">
               <img
                 class="work__image"
@@ -166,7 +174,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">App</div>
                 <div class="work__title">
                   Project title
                   <time class="work__date" datetime="2022-17-06 13:00"
@@ -176,7 +184,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="website">
             <div class="work">
               <img
                 class="work__image"
@@ -184,7 +192,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Website</div>
                 <div class="work__title">
                   Project title
                   <time class="work__date" datetime="2022-17-06 13:00"
@@ -194,7 +202,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="interation">
             <div class="work">
               <img
                 class="work__image"
@@ -202,7 +210,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Interation</div>
                 <div class="work__title">
                   Project title
                   <time class="work__date" datetime="2022-17-06 13:00"
@@ -212,7 +220,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="website">
             <div class="work">
               <img
                 class="work__image"
@@ -220,7 +228,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Website</div>
                 <div class="work__title">
                   Project title
                   <time class="work__date" datetime="2022-17-06 13:00"
@@ -230,7 +238,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="interation">
             <div class="work">
               <img
                 class="work__image"
@@ -238,7 +246,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">Interation</div>
                 <div class="work__title">
                   Project title
                   <time class="work__date" datetime="2022-17-06 13:00"
@@ -248,7 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__col">
+          <div class="portfolio__col" data-cat="app">
             <div class="work">
               <img
                 class="work__image"
@@ -256,7 +264,7 @@
                 alt="work"
               />
               <div class="work__content">
-                <div class="work__cat">Category</div>
+                <div class="work__cat">App</div>
                 <div class="work__title">
                   Project title
                   <time class="work__date" datetime="2022-17-06 13:00"
@@ -507,7 +515,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="display: none">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__credits">
@@ -628,13 +636,13 @@
 
     <!-- Modal-resume -->
 
-    <div class="modal">
+    <div class="modal" style="display: none">
       <div class="modal__dialog">
         <button class="modal__close" type="button">
           <img src="img/modal-close.svg" alt="close" />
         </button>
         <div class="modal__content">
-          <h3 class="modal__title">resume</h3>
+          <h3 class="modal__title text-center">resume</h3>
           <div class="text-center">
             <button class="btn btn--thin" type="button">DOWNLOAD PDF</button>
             <button class="btn btn--thin" type="button">PRINT</button>
@@ -644,17 +652,223 @@
             <div class="timeline__col timeline__col--left">
               <h4 class="tumeline__title">EXPERIENCE</h4>
 
-							<div class="timeline__item">
-
-								
-							</div>
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="20-06-2022"
+                  >2017 - <b> Present</b></time
+                >
+                <h5 class="timeline__subtitle">Freelancer</h5>
+                <div class="timeline__position">Art Director</div>
+                <div class="timeline__text">
+                  FreelaLorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam lobortis felis non tempor ullamcorper. Pellentesque
+                  cursus lectus a pulvinar dapibus. Nullam blandit aliquam
+                  ligula ut condimentum.ncer
+                </div>
+              </div>
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="20-06-2022"
+                  >2017 - <b> Present</b></time
+                >
+                <h5 class="timeline__subtitle">Freelancer</h5>
+                <div class="timeline__position">Art Director</div>
+                <div class="timeline__text">
+                  FreelaLorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam lobortis felis non tempor ullamcorper. Pellentesque
+                  cursus lectus a pulvinar dapibus. Nullam blandit aliquam
+                  ligula ut condimentum.ncer
+                </div>
+              </div>
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="20-06-2022"
+                  >2017 - <b> Present</b></time
+                >
+                <h5 class="timeline__subtitle">Freelancer</h5>
+                <div class="timeline__position">Art Director</div>
+                <div class="timeline__text">
+                  FreelaLorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam lobortis felis non tempor ullamcorper. Pellentesque
+                  cursus lectus a pulvinar dapibus. Nullam blandit aliquam
+                  ligula ut condimentum.ncer
+                </div>
+              </div>
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="20-06-2022"
+                  >2017 - <b> Present</b></time
+                >
+                <h5 class="timeline__subtitle">Freelancer</h5>
+                <div class="timeline__position">Art Director</div>
+                <div class="timeline__text">
+                  FreelaLorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam lobortis felis non tempor ullamcorper. Pellentesque
+                  cursus lectus a pulvinar dapibus. Nullam blandit aliquam
+                  ligula ut condimentum.ncer
+                </div>
+              </div>
             </div>
             <div class="timeline__col timeline__col--right">
               <h4 class="tumeline__title">EDUCATION</h4>
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="20-06-2022"
+                  >2005 - 2010</time
+                >
+                <h5 class="timeline__subtitle">UI/UX Design</h5>
+                <div class="timeline__position">LA University, USA</div>
+              </div>
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="20-06-2022"
+                  >2002 - 2005</time
+                >
+                <h5 class="timeline__subtitle">UI/UX Design</h5>
+                <div class="timeline__position">LA Collage of Art, USA</div>
+              </div>
+
+              <h4 class="tumeline__title">EDUCATION</h4>
+
+              <div class="progress-bar">
+                <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">UI/UX Design</div>
+                  </div>
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div
+                        class="progress-bar__progress"
+                        style="width: 80%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">Illustrator</div>
+                  </div>
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div
+                        class="progress-bar__progress"
+                        style="width: 70%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">Photoshop</div>
+                  </div>
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div
+                        class="progress-bar__progress"
+                        style="width: 90%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress-bar__item">
+                  <div class="progress-bar__left">
+                    <div class="progress-bar__title">Sketch</div>
+                  </div>
+                  <div class="progress-bar__right">
+                    <div class="progress-bar__bar">
+                      <div
+                        class="progress-bar__progress"
+                        style="width: 55%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Progress -->
+              <h4 class="tumeline__title">awards</h4>
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="20-06-2022"
+                  >2005 - 2010</time
+                >
+                <h5 class="timeline__subtitle">UI/UX Design</h5>
+                <div class="timeline__position">LA University, USA</div>
+                <div class="timeline__text">
+                  FreelaLorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam lobortis felis non tempor ullamcorper. Pellentesque
+                  cursus lectus a pulvinar dapibus. Nullam blandit aliquam
+                  ligula ut condimentum.ncer
+                </div>
+              </div>
+              <div class="timeline__item">
+                <time class="timeline__date" datetime="20-06-2022"
+                  >2005 - 2010</time
+                >
+                <h5 class="timeline__subtitle">UI/UX Design</h5>
+                <div class="timeline__position">LA University, USA</div>
+                <div class="timeline__text">
+                  FreelaLorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam lobortis felis non tempor ullamcorper. Pellentesque
+                  cursus lectus a pulvinar dapibus. Nullam blandit aliquam
+                  ligula ut condimentum.ncer
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="text-center">
+            <button type="button" class="btn">hire me</button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Modal Talk -->
+
+    <div class="modal" style="display: none">
+      <div class="modal__dialog modal__dialog--sm">
+        <button class="modal__close" type="button">
+          <img src="img/modal-close.svg" alt="close" />
+        </button>
+
+        <div class="contact">
+          <div class="contact__left">
+            <h3 class="modal__title mb-0">LET'S TALK!</h3>
+            <h4 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h4>
+            <ul class="contact__info">
+              <li class="contact__info-item">
+                <img src="img/telephone.svg" alt="tel" />(200) 100 3000
+              </li>
+              <li class="contact__info-item">
+                <img src="img/mail.svg" alt="mail" />designer@ui43.com
+              </li>
+            </ul>
+
+            <form class="form" action="/" method="post">
+              <div class="form__group">
+                <label for="input-email" class="form__label"
+                  >Adress e-mail</label
+                >
+                <input
+                  name="input-email"
+                  id="input-email"
+                  type="text"
+                  class="form__input"
+                  placeholder="Adress e-mail"
+                />
+              </div>
+              <div class="form__group">
+                <label for="input-text" class="form__label">Request</label>
+                <textarea
+                  name="input-text"
+                  id="input-text"
+                  type="text"
+                  class="form__textarea"
+                  placeholder="Type your request..."
+                ></textarea>
+              </div>
+              <div class="text-right">
+                <button class="btn" type="button">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="app/app.js"></script>
   </body>
 </html>
