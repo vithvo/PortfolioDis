@@ -1,0 +1,40 @@
+//main: ../style.less
+
+.timeline {
+  display: flex;
+  margin: 4.2rem auto;
+  width: 100%;
+  max-width: 768px;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    background-color: @black;
+    top: 0;
+    left: 50%;
+    height: 100%;
+  }
+}
+
+.timeline__col {
+  width: 50%;
+}
+
+.timeline__col--left {
+  text-align: right;
+  padding-right: 3.2rem;
+}
+
+.timeline__col--right {
+  padding-left: 3.2rem;
+}
+
+.tumeline__title {
+  font-size: 1.2rem;
+  color: @black;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2.6rem;
+}
