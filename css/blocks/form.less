@@ -1,7 +1,19 @@
 //main: ../style.less
 
+.form {
+  .btn {
+    @media @mobile {
+      width: 100%;
+    }
+  }
+}
+
 .form__group {
   margin-bottom: 2rem;
+
+  @media @mobile {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .form__label {
@@ -31,9 +43,16 @@
   &::placeholder {
     color: @black;
   }
+
+  @media @mobile {
+    padding: 0.9rem 1.4rem;
+  }
 }
 
 .form__textarea {
   height: 200px;
   resize: none;
+  @media @mobile {
+    height: 160px;
+  }
 }

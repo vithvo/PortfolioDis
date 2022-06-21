@@ -2,6 +2,7 @@
 
 .timeline {
   display: flex;
+  flex-wrap: wrap;
   margin: 4.2rem auto;
   width: 100%;
   max-width: 768px;
@@ -15,20 +16,45 @@
     top: 0;
     left: 50%;
     height: 100%;
+    @media @mobile-sm {
+      content: none;
+    }
+  }
+  @media @mobile {
+    margin: 2.5rem auto;
   }
 }
 
 .timeline__col {
   width: 50%;
+  @media @mobile-sm {
+    width: 100%;
+  }
 }
 
 .timeline__col--left {
   text-align: right;
   padding-right: 3.2rem;
+
+  @media @mobile {
+    padding-right: 2rem;
+  }
+  @media @mobile-sm {
+    text-align: center;
+    padding-right: 0;
+  }
 }
 
 .timeline__col--right {
   padding-left: 3.2rem;
+
+  @media @mobile {
+    padding-left: 2rem;
+  }
+  @media @mobile-sm {
+    text-align: center;
+    padding-left: 0;
+  }
 }
 
 .tumeline__title {
@@ -37,12 +63,26 @@
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 2rem;
+  @media @mobile {
+    font-size: 1rem;
+  }
+
+  @media @mobile-sm {
+    margin-bottom: 1.2rem;
+  }
 }
 
 .timeline__item {
   margin-bottom: 2.6rem;
   &:last-child {
     margin-bottom: 0;
+    @media @mobile-sm {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media @mobile-sm {
+    margin-bottom: 2rem;
   }
 }
 

@@ -9,12 +9,17 @@
 .footer__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer__nav-link {
   margin-left: 1.5rem;
   color: #bbbbcc;
   text-decoration: none;
+
+  @media @mobile-sm {
+    margin: 0 1.5rem 0.5rem;
+  }
   &:hover {
     text-decoration: underline;
   }
@@ -37,6 +42,15 @@
 .footer__credits {
   display: flex;
   align-items: center;
+  @media @tablet {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  @media @mobile-sm {
+    flex-direction: column;
+  }
 }
 .footer__coryright {
   color: #bbbbcc;
@@ -44,6 +58,10 @@
   padding-right: 0.8rem;
   margin-right: 1rem;
   border-right: 1px solid fade(@grey, 35%);
+
+  @media @mobile-sm {
+    margin-bottom: 1rem;
+  }
 }
 .footer__social {
   display: flex;
@@ -52,12 +70,23 @@
   a {
     margin-right: 1.2rem;
     text-decoration: none;
+    @media @mobile-sm {
+      margin: 0 0.5rem;
+    }
   }
 }
 .footer__nav {
   display: flex;
   font-size: 0.94rem;
   align-items: center;
+  @media @tablet {
+    width: 100%;
+    justify-content: center;
+  }
+
+  @media @mobile-sm {
+    flex-wrap: wrap;
+  }
 }
 
 .footer__icon {

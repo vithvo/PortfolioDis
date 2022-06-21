@@ -7,6 +7,11 @@
   position: relative;
   width: 65%;
   overflow: hidden;
+
+  @media @mobile-sm {
+    display: none;
+    width: 100%;
+  }
 }
 .modal-work__photo {
   position: absolute;
@@ -20,6 +25,13 @@
   position: relative;
   width: 35%;
   padding: 3.4rem 6.6rem 1rem 1.73rem;
+  @media @tablet {
+    padding: 3.4rem 1rem 2.5rem 1rem;
+  }
+  @media @mobile-sm {
+    width: 100%;
+		text-align: center;
+  }
 }
 .modal-work__header {
   margin-bottom: 2.2rem;
@@ -30,11 +42,23 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0.2rem;
+
+  @media @tablet {
+    font-size: 1.5rem;
+  }
+
+  @media @mobile {
+    font-size: 1.2rem;
+  }
 }
 .modal-work__info {
   font-size: 1.2rem;
   color: @grey;
   text-transform: uppercase;
+
+  @media @tablet {
+    font-size: 0.8rem;
+  }
 }
 
 .modal-work__divider {
@@ -50,11 +74,17 @@
   color: @black;
   font-weight: 700;
   margin-bottom: 0.2rem;
+  @media @tablet {
+    font-size: 0.8rem;
+  }
 }
 .modal-work__client-company {
   font-size: 0.94rem;
   font-style: italic;
   color: @grey;
+  @media @tablet {
+    font-size: 0.8rem;
+  }
 }
 .modal-work__text {
   font-size: 0.8rem;
@@ -62,6 +92,11 @@
   line-height: 2;
   font-weight: 300;
   margin-bottom: 8.66rem;
+
+  @media @mobile {
+    font-size: 0.6rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .modal-work__footer {
@@ -73,6 +108,9 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
+  @media @mobile {
+    padding: 0 1rem 1rem;
+  }
 }
 .modal-work__btn {
   background: none;
@@ -87,6 +125,9 @@
   &:hover {
     transform: rotateX(40deg);
     letter-spacing: 0.1rem;
+  }
+  @media @mobile {
+    font-size: 0.7rem;
   }
 }
 .modal-work__btn-prev {
